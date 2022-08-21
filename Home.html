@@ -22,30 +22,35 @@
             <li>
                 <i class='bx bx-search'></i>
                 <input class="text" placeholder="Search...">
+                <span class="tooltip">Search</span>
             </li>
             <li>
                 <a href="#">
                     <i class='bx bx-grid-alt'></i>
                     <span class="links_name">Dashboard</span>
                 </a>
+                <span class="tooltip">Dashboard</span>
             </li>
             <li>
                 <a href="#">
                     <i class='bx bx-user' ></i>
                     <span class="links_name">User</span>
                 </a>
+                <span class="tooltip">User</span>
             </li>
             <li>
                 <a href="#">
                     <i class='bx bx-cog'></i>
                     <span class="links_name">Setting</span>
                 </a>
+                <span class="tooltip">Setting</span>
             </li>
             <li>
                 <a href="#">
                     <i class='bx bxs-user-detail'></i>
                     <span class="links_name">About Project</span>
                 </a>
+                <span class="tooltip">About</span>
             </li>
         </ul>
         <div class="profile_content">
@@ -62,7 +67,20 @@
         </div>
     </div>
     <div class="home_content">
-        <div class="text"></div>
+        <div class="text">Cell Membrane</div>
     </div>
+
+    <script>
+        let btn = document.querySelector("#btn");
+        let sidebar = document.querySelector(".sidebar");
+        let searchBtn = document.querySelector(".bx-search");
+
+        btn.onclick = function() {
+            sidebar.classList.toggle("active");
+        }
+        searchBtn.onclick = function() {
+            sidebar.classList.toggle("active");
+        }
+    </script>
 </body>
 </html>
